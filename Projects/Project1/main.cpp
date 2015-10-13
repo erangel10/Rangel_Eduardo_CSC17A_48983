@@ -43,6 +43,10 @@ int main(int argc, char** argv) {
 //function to output the game rules
 void rules()
 {
+    cout<<setw(10)<<endl;
+    cout<<"BATTLESHIP"<<endl;
+    cout<<"RULES"<<endl;
+    
     
 }
 //Function to start the game board
