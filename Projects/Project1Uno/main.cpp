@@ -25,16 +25,16 @@ int numPlys();//number of players
 void twoPlys();//two players option
 void fourPls();//four players 
 //void cards(string [], int);
-void cards(const string [], int);
+void cards();
 //execution begins here
 int main(int argc, char** argv) {
     //declare variables
     const int size = 5;
-    const string mainCrd[size]= {"Wild Draw 4", "Skip", "Draw Two", "Wild", "Reverse"};
+    //const string mainCrd[size]= {"Wild Draw 4", "Skip", "Draw Two", "Wild", "Reverse"};
     //srand(static_cast<int>(time(0)));
     
     
-    cards(mainCrd, size);
+    cards();
    
     int choose;
     cout<<"Choose one of the following numbers"<<endl;
@@ -84,13 +84,13 @@ void rules()
     cout<<"Hello"<<endl;    
 }
             //card types array
-void cards(const string crd[], int size)
+void cards()
 {
     srand(static_cast<int>(time(0)));
     string word;
    
     //array holding the main card types 
-    crd [5] = {"Wild Draw 4", "Skip", "Draw Two", "Wild", "Reverse"};//main cards array 
+    const string crd [5] = {"Wild Draw 4", "Skip", "Draw Two", "Wild", "Reverse"};
     
    word = crd[rand() % 5];
    
