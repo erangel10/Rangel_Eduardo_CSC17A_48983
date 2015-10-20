@@ -18,6 +18,18 @@ using namespace std;
 
 //global constants
 
+//struct function
+
+struct cards
+{
+    string Crds [52]= {"red 0", "red 1", "red 2", "red 3", "red 4", "red 5", "red 6", "red 7", "red 8", "red 9", "red skip", "red draw two", "red reverse",
+                        "blue 0", "blue 1", "blue 2", "blue 3", "blue 4", "blue 5", "blue 6", "blue 7", "blue 8", "blue 9", "blue skip", "blue draw two", "blue reverse",
+                        "green 0", "green 1", "green 2", "green 3", "green 4", "green 5", "green 6", "green 7", "green 8", "green 9", "green skip", "green draw two", "green reverse",
+                        "yellow 0", "yellow 1", "yellow 2", "yellow 3", "yellow 4", "yellow 5", "yellow 6", "yellow 7", "yellow 8", "yellow 9", "yellow skip", "yellow draw two", "yellow reverse",
+                        "Wild Draw 4", "Wild"};
+           
+};
+
 //Function Prototypes
 void rules();//game rules
 void gamePly();//gameplay
