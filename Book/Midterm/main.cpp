@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Eduardo Rangel
- * Created on October 28, 2014, 2:14 PM
+ * Created on October 27, 2014, 2:14 PM
  * Purpose: Midterm test
  */
 //System Libraries
