@@ -18,7 +18,24 @@ using namespace std;
 //Execution begins here
 int main(int argc, char** argv) {
     //declare variables
+    NumDays a(10);
+    NumDays b(12);
+    NumDays c(24);
     
+    //output information
+    cout<<"Hours"<<a.getHour()<<"\n";
+    cout<<"Day a"<<a.getDay()<<"\n";
+    cout<<"Day b"<<b.getDay()<<"\n";
+    cout<<"Day c"<<c.getDay()<<"\n";
+    
+    //increase operators
+    c++;
+    cout << "day c++ " << c.getDay() << "\n";
+    cout << "day a+b " << (a+b).getDay() << "\n";
+    
+    //Decrease operators
+    a--;
+    cout << "day a-- " << a.getDay() << "\n";
 
     return 0;
 }
