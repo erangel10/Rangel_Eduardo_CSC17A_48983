@@ -10,6 +10,7 @@
 
 
 class Time {
+    
     protected:
         int hour;
         int min;
@@ -24,7 +25,7 @@ class Time {
         { hour = h; min = m; sec = s; }
 
         // Accessor functions
-        int getHour() const
+        virtual int getHour() const
         { return hour; }
 
         int getMin() const
@@ -33,6 +34,8 @@ class Time {
         int getSec() const
         { return sec; }
  };
+ 
+ 
  class milTime : public Time
  {
     private:
@@ -40,10 +43,15 @@ class Time {
         int milSeconds;
         
     public:
+        milTime()
+        {
+            milHours= 0;
+            milSeconds = 0;
+        }
         milTime(int, int);
-        void setTime(int, int);
-        int getHour(int){return milHours;}
-        int getStandHr();
+        void setTime(int mH, int mS);
+        int getHour(){return milHours;}
+        int getStandHr(){return hour % 12;}
  };
 
 #endif	/* TIME_H */
