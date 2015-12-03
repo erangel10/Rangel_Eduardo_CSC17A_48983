@@ -5,11 +5,11 @@
  * Created on November 24, 2015, 4:22 PM
  */
 //system libraries
-#include <cstdlib>
 #include <iostream>
-#include <iomanip>
-#include <vector>
+#include <cstdlib>
 #include <ctime>
+#include <vector>
+#include "Minesweeper.h"
 
 using namespace std;
 //user libraries

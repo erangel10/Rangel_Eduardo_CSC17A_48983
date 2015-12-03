@@ -25,15 +25,15 @@ class GameBoard : public Abstracts
         
         GameBoard(int rows, int cols){create(rows,cols);clearBoard();}
         
-        void destroy();
-        void setRows(int);
-        void setCols(int);
-        int getRows() const {return rows;}
-        int getCols()const {return cols;}
-        void clearBoard();
-        void setUp();
-        void loadGame();
-        void print() const;
+        virtual void destroy();
+        virtual void setRows(int);
+        virtual void setCols(int);
+        virtual int getRows() const {return rows;}
+        virtual int getCols()const {return cols;}
+        virtual void clearBoard();
+        virtual void setUp();
+        virtual void loadGame();
+        virtual void print() const;
         int* operator[](int index){return data[index];}
         int* operator[](int index) const {return data[index];}
         
