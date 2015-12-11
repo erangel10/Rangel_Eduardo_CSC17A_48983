@@ -1,0 +1,266 @@
+\hypertarget{class_game_board}{}\section{Game\+Board Class Reference}
+\label{class_game_board}\index{Game\+Board@{Game\+Board}}
+
+
+Base class for games that require an n$\ast$m array such as minesweeper.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Board.\+h$>$}
+
+Inheritance diagram for Game\+Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_board}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_game_board_1_1wrong}{wrong}
+\begin{DoxyCompactList}\small\item\em output this if user tries to set negative rows or columns \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_board_ac9ffda4dde51341af1315168e8e066a0}{Game\+Board} (int \hyperlink{class_game_board_a83b7f30682f1312a911e036b70c1c6d6}{rows}, int \hyperlink{class_game_board_a95d7d4a10285e01d7a12e94e48090cb7}{cols})
+\item 
+virtual \hyperlink{class_game_board_ae582b50974ecef2810c63516c104ef83}{$\sim$\+Game\+Board} ()
+\item 
+virtual void \hyperlink{class_game_board_a891a6e8e8983e6ef4f1a19205392d3ef}{destroy} ()
+\begin{DoxyCompactList}\small\item\em Function deallocates memory. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_game_board_ac8b28f17c3ea049f3cb07216b850c4a9}{set\+Rows} (int)
+\item 
+virtual void \hyperlink{class_game_board_a84673c141f4790940df3aca0e24c3203}{set\+Cols} (int)
+\item 
+virtual int \hyperlink{class_game_board_a06b193fdd5b618efdbb2700fd7dcffd0}{get\+Rows} () const 
+\item 
+virtual int \hyperlink{class_game_board_a3e72c802e556c00efd911d95986a4f2e}{get\+Cols} () const 
+\item 
+virtual void \hyperlink{class_game_board_a85f26da7e1be97961225f8fd893f18ee}{clear} ()
+\begin{DoxyCompactList}\small\item\em Function resets the \hyperlink{class_game_board}{Game\+Board} to initial in order to use it again. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_game_board_a81f25c1109558131e0153a4b278cffcb}{set\+Up\+G} ()
+\item 
+virtual void \hyperlink{class_game_board_ac73c2de2d5a31c591ff3434d8fd38686}{load\+Game} ()
+\item 
+virtual void \hyperlink{class_game_board_a90f93cc1b6ca4e06f7200696fb21c9b9}{print} () const 
+\item 
+int $\ast$ \hyperlink{class_game_board_a28a159916f1fb80195bc90f065d040fe}{operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+int $\ast$ \hyperlink{class_game_board_acaedf10ba0c53fc745238d528fe8878b}{operator\mbox{[}$\,$\mbox{]}} (int index) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_game_board_ab823080e4192fb2673763aa6dea046cd}{create} (int, int)
+\begin{DoxyCompactList}\small\item\em Function that creates the grid on which game will be played. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$ \hyperlink{class_game_board_aa46b9d2eb5d9baf09f2a6e2a4a777d35}{data}
+\item 
+int \hyperlink{class_game_board_a83b7f30682f1312a911e036b70c1c6d6}{rows}
+\item 
+int \hyperlink{class_game_board_a95d7d4a10285e01d7a12e94e48090cb7}{cols}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for games that require an n$\ast$m array such as minesweeper. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game_board_ac9ffda4dde51341af1315168e8e066a0}{}\index{Game\+Board@{Game\+Board}!Game\+Board@{Game\+Board}}
+\index{Game\+Board@{Game\+Board}!Game\+Board@{Game\+Board}}
+\subsubsection[{Game\+Board(int rows, int cols)}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Board\+::\+Game\+Board (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_board_ac9ffda4dde51341af1315168e8e066a0}
+\hypertarget{class_game_board_ae582b50974ecef2810c63516c104ef83}{}\index{Game\+Board@{Game\+Board}!````~Game\+Board@{$\sim$\+Game\+Board}}
+\index{````~Game\+Board@{$\sim$\+Game\+Board}!Game\+Board@{Game\+Board}}
+\subsubsection[{$\sim$\+Game\+Board()}]{\setlength{\rightskip}{0pt plus 5cm}virtual Game\+Board\+::$\sim$\+Game\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_game_board_ae582b50974ecef2810c63516c104ef83}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_board_a85f26da7e1be97961225f8fd893f18ee}{}\index{Game\+Board@{Game\+Board}!clear@{clear}}
+\index{clear@{clear}!Game\+Board@{Game\+Board}}
+\subsubsection[{clear()}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_board_a85f26da7e1be97961225f8fd893f18ee}
+
+
+Function resets the \hyperlink{class_game_board}{Game\+Board} to initial in order to use it again. 
+
+
+
+Reimplemented in \hyperlink{class_minesweeper_a9304b49877a6d02f6e5b9c5f48f34055}{Minesweeper}.
+
+\hypertarget{class_game_board_ab823080e4192fb2673763aa6dea046cd}{}\index{Game\+Board@{Game\+Board}!create@{create}}
+\index{create@{create}!Game\+Board@{Game\+Board}}
+\subsubsection[{create(int, int)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::create (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\label{class_game_board_ab823080e4192fb2673763aa6dea046cd}
+
+
+Function that creates the grid on which game will be played. 
+
+dinamically create a \hyperlink{class_minesweeper}{Minesweeper}
+
+Set up the rows
+
+Create each column \hypertarget{class_game_board_a891a6e8e8983e6ef4f1a19205392d3ef}{}\index{Game\+Board@{Game\+Board}!destroy@{destroy}}
+\index{destroy@{destroy}!Game\+Board@{Game\+Board}}
+\subsubsection[{destroy()}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_board_a891a6e8e8983e6ef4f1a19205392d3ef}
+
+
+Function deallocates memory. 
+
+delete each dynamically allocated row
+
+delete the dynamically allocated structure \hypertarget{class_game_board_a3e72c802e556c00efd911d95986a4f2e}{}\index{Game\+Board@{Game\+Board}!get\+Cols@{get\+Cols}}
+\index{get\+Cols@{get\+Cols}!Game\+Board@{Game\+Board}}
+\subsubsection[{get\+Cols() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual int Game\+Board\+::get\+Cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_game_board_a3e72c802e556c00efd911d95986a4f2e}
+
+
+Implements \hyperlink{class_abstracts_a34a6f65f6f9dea6a2e6014b76b333b6a}{Abstracts}.
+
+
+
+Reimplemented in \hyperlink{class_minesweeper_a82c571f6a7a80d001a3cb0a73445588f}{Minesweeper}.
+
+\hypertarget{class_game_board_a06b193fdd5b618efdbb2700fd7dcffd0}{}\index{Game\+Board@{Game\+Board}!get\+Rows@{get\+Rows}}
+\index{get\+Rows@{get\+Rows}!Game\+Board@{Game\+Board}}
+\subsubsection[{get\+Rows() const }]{\setlength{\rightskip}{0pt plus 5cm}virtual int Game\+Board\+::get\+Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_game_board_a06b193fdd5b618efdbb2700fd7dcffd0}
+
+
+Implements \hyperlink{class_abstracts_adb4bf4c040da9691558d27991db6c33f}{Abstracts}.
+
+
+
+Reimplemented in \hyperlink{class_minesweeper_abf6ccbfbecf96ef15f21ca7a94e98f1b}{Minesweeper}.
+
+\hypertarget{class_game_board_ac73c2de2d5a31c591ff3434d8fd38686}{}\index{Game\+Board@{Game\+Board}!load\+Game@{load\+Game}}
+\index{load\+Game@{load\+Game}!Game\+Board@{Game\+Board}}
+\subsubsection[{load\+Game()}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::load\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_board_ac73c2de2d5a31c591ff3434d8fd38686}
+
+
+Reimplemented in \hyperlink{class_minesweeper_a11b4462ac060a000e79f5537b9ca9da2}{Minesweeper}.
+
+\hypertarget{class_game_board_a28a159916f1fb80195bc90f065d040fe}{}\index{Game\+Board@{Game\+Board}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Game\+Board@{Game\+Board}}
+\subsubsection[{operator[](int index)}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Game\+Board\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_board_a28a159916f1fb80195bc90f065d040fe}
+\hypertarget{class_game_board_acaedf10ba0c53fc745238d528fe8878b}{}\index{Game\+Board@{Game\+Board}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Game\+Board@{Game\+Board}}
+\subsubsection[{operator[](int index) const }]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Game\+Board\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_game_board_acaedf10ba0c53fc745238d528fe8878b}
+\hypertarget{class_game_board_a90f93cc1b6ca4e06f7200696fb21c9b9}{}\index{Game\+Board@{Game\+Board}!print@{print}}
+\index{print@{print}!Game\+Board@{Game\+Board}}
+\subsubsection[{print() const }]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_board_a90f93cc1b6ca4e06f7200696fb21c9b9}
+
+
+Implements \hyperlink{class_abstracts_a2355084469196dff6645993ff14c96bd}{Abstracts}.
+
+
+
+Reimplemented in \hyperlink{class_minesweeper_ac158ba4f4bca146302059096db943dad}{Minesweeper}.
+
+\hypertarget{class_game_board_a84673c141f4790940df3aca0e24c3203}{}\index{Game\+Board@{Game\+Board}!set\+Cols@{set\+Cols}}
+\index{set\+Cols@{set\+Cols}!Game\+Board@{Game\+Board}}
+\subsubsection[{set\+Cols(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::set\+Cols (
+\begin{DoxyParamCaption}
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_board_a84673c141f4790940df3aca0e24c3203}
+
+
+Implements \hyperlink{class_abstracts_aa8bda3c5e2165c34ad51b1833cb5ce58}{Abstracts}.
+
+
+
+Reimplemented in \hyperlink{class_minesweeper_a6e243fa0d9859fcf6dc4e45ec146b7df}{Minesweeper}.
+
+\hypertarget{class_game_board_ac8b28f17c3ea049f3cb07216b850c4a9}{}\index{Game\+Board@{Game\+Board}!set\+Rows@{set\+Rows}}
+\index{set\+Rows@{set\+Rows}!Game\+Board@{Game\+Board}}
+\subsubsection[{set\+Rows(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::set\+Rows (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_board_ac8b28f17c3ea049f3cb07216b850c4a9}
+
+
+Implements \hyperlink{class_abstracts_af4eaab1bfc282612adfaca1eb2461b66}{Abstracts}.
+
+
+
+Reimplemented in \hyperlink{class_minesweeper_ab316cfe272f38e4768a6e45c171bce3a}{Minesweeper}.
+
+\hypertarget{class_game_board_a81f25c1109558131e0153a4b278cffcb}{}\index{Game\+Board@{Game\+Board}!set\+Up\+G@{set\+Up\+G}}
+\index{set\+Up\+G@{set\+Up\+G}!Game\+Board@{Game\+Board}}
+\subsubsection[{set\+Up\+G()}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::set\+Up\+G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_game_board_a81f25c1109558131e0153a4b278cffcb}
+
+
+Implements \hyperlink{class_abstracts_ad8fa8c3873a0c5b593887ae924fe6fce}{Abstracts}.
+
+
+
+Reimplemented in \hyperlink{class_minesweeper_ac5ae43be99a0cc126da239d3572acbe7}{Minesweeper}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_game_board_a95d7d4a10285e01d7a12e94e48090cb7}{}\index{Game\+Board@{Game\+Board}!cols@{cols}}
+\index{cols@{cols}!Game\+Board@{Game\+Board}}
+\subsubsection[{cols}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Board\+::cols\hspace{0.3cm}{\ttfamily [protected]}}\label{class_game_board_a95d7d4a10285e01d7a12e94e48090cb7}
+\hypertarget{class_game_board_aa46b9d2eb5d9baf09f2a6e2a4a777d35}{}\index{Game\+Board@{Game\+Board}!data@{data}}
+\index{data@{data}!Game\+Board@{Game\+Board}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Game\+Board\+::data\hspace{0.3cm}{\ttfamily [protected]}}\label{class_game_board_aa46b9d2eb5d9baf09f2a6e2a4a777d35}
+\hypertarget{class_game_board_a83b7f30682f1312a911e036b70c1c6d6}{}\index{Game\+Board@{Game\+Board}!rows@{rows}}
+\index{rows@{rows}!Game\+Board@{Game\+Board}}
+\subsubsection[{rows}]{\setlength{\rightskip}{0pt plus 5cm}int Game\+Board\+::rows\hspace{0.3cm}{\ttfamily [protected]}}\label{class_game_board_a83b7f30682f1312a911e036b70c1c6d6}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_game_board_8h}{Game\+Board.\+h}\item 
+\hyperlink{_game_board_8cpp}{Game\+Board.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,241 @@
+\hypertarget{class_minesweeper}{}\section{Minesweeper Class Reference}
+\label{class_minesweeper}\index{Minesweeper@{Minesweeper}}
+
+
+{\ttfamily \#include $<$Minesweeper.\+h$>$}
+
+Inheritance diagram for Minesweeper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_minesweeper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_minesweeper_a289ffbe6b9e6b728a19d1f73b78262e2}{Minesweeper} (int row, int col)
+\item 
+void \hyperlink{class_minesweeper_ab316cfe272f38e4768a6e45c171bce3a}{set\+Rows} (int)
+\item 
+void \hyperlink{class_minesweeper_a6e243fa0d9859fcf6dc4e45ec146b7df}{set\+Cols} (int)
+\item 
+int \hyperlink{class_minesweeper_abf6ccbfbecf96ef15f21ca7a94e98f1b}{get\+Rows} () const 
+\item 
+int \hyperlink{class_minesweeper_a82c571f6a7a80d001a3cb0a73445588f}{get\+Cols} () const 
+\item 
+void \hyperlink{class_minesweeper_ac158ba4f4bca146302059096db943dad}{print} () const 
+\item 
+void \hyperlink{class_minesweeper_ab90b8a53aee9758259e690bcb397bb1e}{prnt\+Obscr} () const 
+\begin{DoxyCompactList}\small\item\em Function prints the \hyperlink{class_minesweeper}{Minesweeper} with spaces hidden. \end{DoxyCompactList}\item 
+void \hyperlink{class_minesweeper_ac5ae43be99a0cc126da239d3572acbe7}{set\+Up\+G} ()
+\item 
+void \hyperlink{class_minesweeper_a98b38257079a4541fdb5ac8f1f9d25db}{play\+Game} ()
+\item 
+void \hyperlink{class_minesweeper_a9304b49877a6d02f6e5b9c5f48f34055}{clear} ()
+\begin{DoxyCompactList}\small\item\em Function that clears the grid on which game will be played. \end{DoxyCompactList}\item 
+void \hyperlink{class_minesweeper_ab8e0fb7bce67aa24dd2e616a2f37917d}{save\+Game} ()
+\item 
+void \hyperlink{class_minesweeper_aa7c5b407fa1907a07a29c9a04d23a3f2}{rules} ()
+\item 
+void \hyperlink{class_minesweeper_a11b4462ac060a000e79f5537b9ca9da2}{load\+Game} ()
+\item 
+int \hyperlink{class_minesweeper_ae83bf3ccb6d130ca8ef1ce642e1fc136}{get\+Mines} () const 
+\item 
+\hyperlink{class_minesweeper}{Minesweeper} \& \hyperlink{class_minesweeper_ad32e6a1ddc9ade6f3958c7568f994e9a}{operator=} (const \hyperlink{class_minesweeper}{Minesweeper} \&)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is the class that holds the \hyperlink{class_minesweeper}{Minesweeper} as well as the associated flags that occur when a user selects a square 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_minesweeper_a289ffbe6b9e6b728a19d1f73b78262e2}{}\index{Minesweeper@{Minesweeper}!Minesweeper@{Minesweeper}}
+\index{Minesweeper@{Minesweeper}!Minesweeper@{Minesweeper}}
+\subsubsection[{Minesweeper(int row, int col)}]{\setlength{\rightskip}{0pt plus 5cm}Minesweeper\+::\+Minesweeper (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_minesweeper_a289ffbe6b9e6b728a19d1f73b78262e2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_minesweeper_a9304b49877a6d02f6e5b9c5f48f34055}{}\index{Minesweeper@{Minesweeper}!clear@{clear}}
+\index{clear@{clear}!Minesweeper@{Minesweeper}}
+\subsubsection[{clear()}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_minesweeper_a9304b49877a6d02f6e5b9c5f48f34055}
+
+
+Function that clears the grid on which game will be played. 
+
+Make sure each square is empty 
+
+Reimplemented from \hyperlink{class_game_board_a85f26da7e1be97961225f8fd893f18ee}{Game\+Board}.
+
+\hypertarget{class_minesweeper_a82c571f6a7a80d001a3cb0a73445588f}{}\index{Minesweeper@{Minesweeper}!get\+Cols@{get\+Cols}}
+\index{get\+Cols@{get\+Cols}!Minesweeper@{Minesweeper}}
+\subsubsection[{get\+Cols() const }]{\setlength{\rightskip}{0pt plus 5cm}int Minesweeper\+::get\+Cols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_minesweeper_a82c571f6a7a80d001a3cb0a73445588f}
+
+
+Reimplemented from \hyperlink{class_game_board_a3e72c802e556c00efd911d95986a4f2e}{Game\+Board}.
+
+\hypertarget{class_minesweeper_ae83bf3ccb6d130ca8ef1ce642e1fc136}{}\index{Minesweeper@{Minesweeper}!get\+Mines@{get\+Mines}}
+\index{get\+Mines@{get\+Mines}!Minesweeper@{Minesweeper}}
+\subsubsection[{get\+Mines() const }]{\setlength{\rightskip}{0pt plus 5cm}int Minesweeper\+::get\+Mines (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_minesweeper_ae83bf3ccb6d130ca8ef1ce642e1fc136}
+\hypertarget{class_minesweeper_abf6ccbfbecf96ef15f21ca7a94e98f1b}{}\index{Minesweeper@{Minesweeper}!get\+Rows@{get\+Rows}}
+\index{get\+Rows@{get\+Rows}!Minesweeper@{Minesweeper}}
+\subsubsection[{get\+Rows() const }]{\setlength{\rightskip}{0pt plus 5cm}int Minesweeper\+::get\+Rows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_minesweeper_abf6ccbfbecf96ef15f21ca7a94e98f1b}
+
+
+Reimplemented from \hyperlink{class_game_board_a06b193fdd5b618efdbb2700fd7dcffd0}{Game\+Board}.
+
+\hypertarget{class_minesweeper_a11b4462ac060a000e79f5537b9ca9da2}{}\index{Minesweeper@{Minesweeper}!load\+Game@{load\+Game}}
+\index{load\+Game@{load\+Game}!Minesweeper@{Minesweeper}}
+\subsubsection[{load\+Game()}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::load\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_minesweeper_a11b4462ac060a000e79f5537b9ca9da2}
+Function prints the data variable from the \hyperlink{class_minesweeper}{Minesweeper} structure writen to a binary file \hyperlink{class_minesweeper_ac158ba4f4bca146302059096db943dad}{print()}; 
+
+Reimplemented from \hyperlink{class_game_board_ac73c2de2d5a31c591ff3434d8fd38686}{Game\+Board}.
+
+\hypertarget{class_minesweeper_ad32e6a1ddc9ade6f3958c7568f994e9a}{}\index{Minesweeper@{Minesweeper}!operator=@{operator=}}
+\index{operator=@{operator=}!Minesweeper@{Minesweeper}}
+\subsubsection[{operator=(const Minesweeper \&)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Minesweeper} \& Minesweeper\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Minesweeper} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{class_minesweeper_ad32e6a1ddc9ade6f3958c7568f994e9a}
+\hypertarget{class_minesweeper_a98b38257079a4541fdb5ac8f1f9d25db}{}\index{Minesweeper@{Minesweeper}!play\+Game@{play\+Game}}
+\index{play\+Game@{play\+Game}!Minesweeper@{Minesweeper}}
+\subsubsection[{play\+Game()}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::play\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_minesweeper_a98b38257079a4541fdb5ac8f1f9d25db}
+Play a game of minesweeper User inputs how many rows and columns and the difficulty Select the row
+
+User wants to save the game save the game and exit
+
+check bounds
+
+Select the column
+
+check bounds
+
+end\+Time
+
+Prepare to print completed \hyperlink{class_minesweeper}{Minesweeper}
+
+Print the complete \hyperlink{class_minesweeper}{Minesweeper} \hypertarget{class_minesweeper_ac158ba4f4bca146302059096db943dad}{}\index{Minesweeper@{Minesweeper}!print@{print}}
+\index{print@{print}!Minesweeper@{Minesweeper}}
+\subsubsection[{print() const }]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_minesweeper_ac158ba4f4bca146302059096db943dad}
+Functions prints the \hyperlink{class_minesweeper}{Minesweeper} with all the squares revealed. used mostly after player loses 
+
+Reimplemented from \hyperlink{class_game_board_a90f93cc1b6ca4e06f7200696fb21c9b9}{Game\+Board}.
+
+\hypertarget{class_minesweeper_ab90b8a53aee9758259e690bcb397bb1e}{}\index{Minesweeper@{Minesweeper}!prnt\+Obscr@{prnt\+Obscr}}
+\index{prnt\+Obscr@{prnt\+Obscr}!Minesweeper@{Minesweeper}}
+\subsubsection[{prnt\+Obscr() const }]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::prnt\+Obscr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_minesweeper_ab90b8a53aee9758259e690bcb397bb1e}
+
+
+Function prints the \hyperlink{class_minesweeper}{Minesweeper} with spaces hidden. 
+
+Print the column index
+
+Pad initial output of column indicator
+
+K\+E\+E\+P E\+M\+P\+T\+Y spaces and M\+I\+N\+Es hidden
+
+print out the C\+L\+E\+A\+Red area
+
+Print out the actual value of the square \hypertarget{class_minesweeper_aa7c5b407fa1907a07a29c9a04d23a3f2}{}\index{Minesweeper@{Minesweeper}!rules@{rules}}
+\index{rules@{rules}!Minesweeper@{Minesweeper}}
+\subsubsection[{rules()}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::rules (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_minesweeper_aa7c5b407fa1907a07a29c9a04d23a3f2}
+\hypertarget{class_minesweeper_ab8e0fb7bce67aa24dd2e616a2f37917d}{}\index{Minesweeper@{Minesweeper}!save\+Game@{save\+Game}}
+\index{save\+Game@{save\+Game}!Minesweeper@{Minesweeper}}
+\subsubsection[{save\+Game()}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::save\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_minesweeper_ab8e0fb7bce67aa24dd2e616a2f37917d}
+\hypertarget{class_minesweeper_a6e243fa0d9859fcf6dc4e45ec146b7df}{}\index{Minesweeper@{Minesweeper}!set\+Cols@{set\+Cols}}
+\index{set\+Cols@{set\+Cols}!Minesweeper@{Minesweeper}}
+\subsubsection[{set\+Cols(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::set\+Cols (
+\begin{DoxyParamCaption}
+\item[{int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_minesweeper_a6e243fa0d9859fcf6dc4e45ec146b7df}
+
+
+Reimplemented from \hyperlink{class_game_board_a84673c141f4790940df3aca0e24c3203}{Game\+Board}.
+
+\hypertarget{class_minesweeper_ab316cfe272f38e4768a6e45c171bce3a}{}\index{Minesweeper@{Minesweeper}!set\+Rows@{set\+Rows}}
+\index{set\+Rows@{set\+Rows}!Minesweeper@{Minesweeper}}
+\subsubsection[{set\+Rows(int)}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::set\+Rows (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_minesweeper_ab316cfe272f38e4768a6e45c171bce3a}
+
+
+Reimplemented from \hyperlink{class_game_board_ac8b28f17c3ea049f3cb07216b850c4a9}{Game\+Board}.
+
+\hypertarget{class_minesweeper_ac5ae43be99a0cc126da239d3572acbe7}{}\index{Minesweeper@{Minesweeper}!set\+Up\+G@{set\+Up\+G}}
+\index{set\+Up\+G@{set\+Up\+G}!Minesweeper@{Minesweeper}}
+\subsubsection[{set\+Up\+G()}]{\setlength{\rightskip}{0pt plus 5cm}void Minesweeper\+::set\+Up\+G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_minesweeper_ac5ae43be99a0cc126da239d3572acbe7}
+Get the user name
+
+ask user if they want to play
+
+play if answer is yes
+
+Get game information from user
+
+Get new data only if user wants to continue
+
+Information was invalid
+
+Cleanup 
+
+Reimplemented from \hyperlink{class_game_board_a81f25c1109558131e0153a4b278cffcb}{Game\+Board}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_minesweeper_8h}{Minesweeper.\+h}\item 
+\hyperlink{_minesweeper_8cpp}{Minesweeper.\+cpp}\end{DoxyCompactItemize}
