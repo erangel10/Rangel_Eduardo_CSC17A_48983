@@ -29,7 +29,7 @@ private:
     void create(int, int);
 
     //void destroy();
-    Minesweeper::Difficulty intToDiff(int);
+    Minesweeper::Difficulty intToDiff(char);
     bool isValidIn() const;
     int nMines(Minesweeper::Difficulty) const;
     void setMines();
@@ -43,10 +43,12 @@ private:
     void prompt();
     char *userName();
     
-public:   
+public: 
+    ///constructors 
     Minesweeper(int row, int col):GameBoard(row, col)
                                 {clear();}
-
+    ///setter and getter functions
+    ///main game functions 
     void setRows(int);
     void setCols(int);
     int getRows() const {return rows;}

@@ -51,9 +51,9 @@ void Minesweeper::prompt() {
         throw wrong();
     rows = row;
     cols = row;
-    int diff;
-    cout << "Enter the difficulty\n"
-    "0=Easy\t 1=Normal\t 2=Hard\n";
+    char diff;
+    cout << "Enter the difficulty (make sure is a lowercase letter)\n"
+    "e=Easy\t n=Normal\t h=Hard\n";
     cin >> diff;
     mines = nMines(intToDiff(diff));
 }
@@ -70,24 +70,24 @@ void Minesweeper::setUpG() {
     char *player = userName();
     /// ask user if they want to play
     cout << "Hello " << player
-         << ", Would you like to play a game of minesweeper?\n"
-            "Hit 'y' if yes\n";
+         << ", Would you like to play minesweeper?\n"
+            "Enter 'y' if yes or enter 'n' if not\n";
     char ans;
     cin >> ans;
     
     /// play if answer is yes
-    if (ans == 'y') {
+    if (ans == 'y' || ans == 'Y') {
         cout << "would you like load previous settings (enter 'y' if yes enter 'n' if not)";
         char ans2;
         cin >> ans2;
-        if ( ans2 == 'y') {
+        if ( ans2 == 'y' || ans2 == 'Y') {
             loadGame();
         }
         else
             /// Get game information from user
             prompt();
         if (isValidIn()) {
-            while (ans == 'y' && isValidIn()) {
+            while (ans == 'y' || ans == 'Y'&& isValidIn()) {
                 playGame();
                 cout << endl;
                 cin.ignore();
@@ -95,7 +95,7 @@ void Minesweeper::setUpG() {
                 cin >> ans;
                 cout << endl;
                 /// Get new data only if user wants to continue
-                if (ans =='y') {
+                if (ans =='y' || ans == 'Y') {
                     prompt();
                     clear();
                 }
@@ -119,7 +119,7 @@ void Minesweeper::setUpG() {
 void Minesweeper::playGame() {
     setMines();
     prntObscr();
-    char row, col;
+    int row, col;
     int turn = 0;
     int initialTime = static_cast<unsigned int>(time(0));
     do {
@@ -127,12 +127,12 @@ void Minesweeper::playGame() {
         cout << "Turn: " << turn++ << endl;
         /// Select the row
         do {
-            cout << "Enter s to save the settings and exit\n";
+            cout << "Enter -0 to save the settings and exit\n";
             cout << "Enter the row " << 0 << "-" << rows-1 << ": ";
             cin >> row;
             /// User wants to save the game
             /// save the game and exit
-            if ( row == 's') {
+            if ( row == -0) {
                 saveGame();
                 return;
             }
@@ -198,15 +198,15 @@ void Minesweeper::clear() {
 
 /// Function return the Minesweeper::Difficulty type from
 /// the int variable
-Minesweeper::Difficulty Minesweeper::intToDiff(int choice) {
+Minesweeper::Difficulty Minesweeper::intToDiff(char choice) {
     switch (choice) {
-        case (0):
+        case 'e':
             return Minesweeper::EASY;
             break;
-        case (1):
+        case 'n':
             return Minesweeper::NORMAL;
             break;
-        case (2):
+        case 'h':
             return Minesweeper::HARD;
         default:
             return Minesweeper::EASY;

@@ -55,18 +55,16 @@ void GameBoard::setCols(int col) {
 void GameBoard::print() const {
     for (int i = 0; i != rows; ++i){
         for (int j = 0; j != cols; ++j) {
-            std::cout << data[i][j] << " ";
+            cout << data[i][j] << " ";
         }
-        std::cout << std::endl;
+        cout <<endl;
     }
 }
 
 void GameBoard::loadGame() {
-    cout << "Calling the the base class loadGame. "
-            " should be calling the derived class version.\n";
+    cout << "Wrong data"<<endl;
 }
 
 void GameBoard::setUpG() {
-    cout <<"Calling the wrong function. Use polymorphism to call the derived"
-    "class setUp function\n";
+    cout << "Wrong data"<<endl;
 }

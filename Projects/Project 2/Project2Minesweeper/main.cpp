@@ -47,9 +47,13 @@ int main(int argc, const char * argv[]) {
     ///Exit stage right
 }
 
+///function to output the rules at the beginning of the game
 void GameRules()
+
 {
   cout<<"                     ~~~~~~~~~~~~ Minesweeper Rules ~~~~~~~~~~~~~"<<endl;
+  
+  cout<<"Welcome to Minesweeper those below aree the rules to play this game enjoy and good luck"<<endl;
   
   cout<<"In Minesweeper you have to choose a difficulty level from the following easy, normal, and hard"<<endl;
   
@@ -63,8 +67,3 @@ void GameRules()
   cout<<endl;
   
 }
-
-
-
-
-///total line count 825
